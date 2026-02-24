@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chirag Sharma | Hire Me</title>
+    <meta name="description"
+        content="Hire Chirag Sharma, a passionate full-stack web developer, to build modern, responsive, and high-performance websites. Let's work together to bring your ideas to reality with clean code and creative design.">
+    <meta name="keywords"
+        content="Hire Chirag Sharma, web developer for hire, full stack developer, freelance web development, portfolio hire, responsive website developer, frontend backend developer, professional coding services">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="CSS/Global.css">
+    <!-- Icon -->
+    <link rel="icon" href="assets/hero.ico">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h2>Hire <span>Me</span></h2>
+            <h3>Let’s Build Something Amazing 🚀</h3>
+            <p>Hi, I’m <strong>Chirag Sharma</strong>, a passionate <strong>Full-Stack Web Developer</strong>.
+                I create modern, responsive, and high-performance websites that not only look stunning
+                but also deliver real results.</p>
+            <p>Whether you’re a <strong>startup</strong>, <strong>business owner</strong>, or looking for a
+                <strong>personal brand website</strong>, I can turn your ideas into reality with clean code, creativity,
+                and the latest technologies.
+            </p>
+            <h3>💡 Ready to start your project?</h3>
+            <form id="hireForm" class="form" name="hire-me" method="POST" data-netlify="true"
+                data-netlify-honeypot="bot-field">
+
+                <input type="hidden" name="form-name" value="hire-me" />
+
+                <!-- Honeypot -->
+                <p hidden>
+                    <label>Don’t fill this out: <input name="bot-field" /></label>
+                </p>
+
+                <h3 class="sub-heading">Tell me about your project</h3>
+
+                <div class="input-box">
+                    <label for="hire-name">Your Name</label>
+                    <input type="text" id="hire-name" name="name" placeholder="Enter Your Name" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="hire-email">Your Email</label>
+                    <input type="email" id="hire-email" name="email" placeholder="Enter Your Email" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="project-type">Project Type</label>
+                    <select id="project-type" name="project_type" required>
+                        <option value="" disabled selected>Select project type</option>
+                        <option value="Website Development">Website Development</option>
+                        <option value="Web App Development">Web App Development</option>
+                        <option value="Website Redesign">Website Redesign</option>
+                        <option value="Website Maintenance">Website Maintenance</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label for="budget">Estimated Budget</label>
+                    <select id="budget" name="budget" required>
+                        <option value="" disabled selected>Select your budget</option>
+                        <option value="5000-10000">₹5,000 - ₹10,000</option>
+                        <option value="10000-20000">₹10,000 - ₹20,000</option>
+                        <option value="20000-50000">₹20,000 - ₹50,000</option>
+                        <option value="50000+">₹50,000+</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label for="timeline">Estimated Timeline</label>
+                    <select id="timeline" name="timeline" required>
+                        <option value="" disabled selected>Select your timeline</option>
+                        <option value="1-2 weeks">1-2 weeks</option>
+                        <option value="3-4 weeks">3-4 weeks</option>
+                        <option value="1-2 months">1-2 months</option>
+                        <option value="2+ months">2+ months</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label for="hire-message">Project Description</label>
+                    <textarea id="hire-message" name="message" rows="5"
+                        placeholder="Provide a brief description of your project..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+    <!-- ====== Footer Section ====== -->
+    <footer class="footer section">
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li class="link-bar"><a href="https://chirag-webpage.netlify.app/">Home</a></li>
+                <li class="link-bar"><a href="hireme.html">Hire Me</a></li>
+                <li class="link-bar"><a href="About.html">About</a></li>
+                <li class="link-bar"><a href="Privacy.html">Privacy Policy</a></li>
+                <li><a href="Terms&condition.html">Terms & Conditions</a></li>
+            </ul><br>
+            <p class="sub-heading">© 2025 Chirag Sharma. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="JS/global.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+/* Ai Bot */
+/* ASTA BUTTON */
+
+/* .asta-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #3b82f6, #9333ea);
+    color: white;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999999;
+    animation: glow 2s infinite alternate;
+} */
+.asta-toggle-wrapper {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.asta-toggle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.6);
+    transition: 0.3s ease;
+}
+
+.asta-toggle:hover {
+    transform: scale(1.1);
+}
+
+
+.asta-help-text {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #c4b5fd;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    animation: pulseText 2s infinite;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.asta-help-text.fade-out {
+    opacity: 0;
+    transform: translateY(5px);
+}
+
+@keyframes pulseText {
+    0% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+
+.asta-status {
+    margin-top: 6px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-weight: 500;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.status-waking {
+    background: #facc15;
+    box-shadow: 0 0 8px #facc15;
+    animation: pulseYellow 1.5s infinite;
+}
+
+@keyframes pulseYellow {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+/* ONLINE */
+.status-online {
+    background: #22c55e;
+    box-shadow: 0 0 8px #22c55e;
+    animation: pulseGreen 1.5s infinite;
+}
+
+/* OFFLINE */
+.status-offline {
+    background: #ef4444;
+    box-shadow: 0 0 8px #ef4444;
+}
+
+@keyframes pulseGreen {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+.asta-input button:first-of-type {
+    background: #9333ea;
+}
+
+#micBtn {
+    background: #9333ea;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* CHATBOX */
+.asta-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    background: #1e293b;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(147, 51, 234, 0.6);
+    z-index: 9999;
+}
+
+.asta-box.active {
+    display: flex;
+}
+
+.asta-header {
+    background: #3b82f6;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.asta-body {
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.bot-msg {
+    background: #334155;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.user-msg {
+    background: #3b82f6;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    text-align: right;
+}
+
+.typing {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 5px;
+}
+
+.asta-input {
+    display: flex;
+    border-top: 1px solid #334155;
+}
+
+.asta-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #0f172a;
+    color: white;
+}
+
+.asta-input button {
+    padding: 10px;
+    background: #3b82f6;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.asta-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#muteBtn {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#muteBtn:hover {
+    opacity: 0.7;
+}

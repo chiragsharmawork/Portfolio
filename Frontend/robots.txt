@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chirag-webpage.netlify.app/sitemap.xml
